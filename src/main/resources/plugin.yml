@@ -1,0 +1,25 @@
+name: EconomyPlugin
+version: '${version}'
+main: net.geferon.economyplugin.EconomyPlugin
+api-version: 1.19
+prefix: GEF_ECO
+authors: [ Geferon ]
+description: Economy Plugin for Spigot
+website: https://geferon.net
+commands:
+  bal:
+    description: Command to view your own or someone elses balance
+    usage: /bal [target username]
+    aliases:
+      - balance
+  give:
+    description: Give balance to user from your own
+    aliases:
+      - pay
+    usage: /give <target username> <amount>
+  setbal:
+    description: Set a users balance
+    usage: /setbal <target username> <amount>
+  earn:
+    description: Chance to earn a random amount of money every minute
+    usage: /earn
